@@ -10,7 +10,9 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "bower cache clean && bower install",
+    "clean": "npm cache clean && bower cache clean && rm -rf node_modules bower_components dist tmp"
   },
   "repository": "",
   "engines": {
