@@ -1,0 +1,7 @@
+<p>Today is: {{moment-format today}}</p>
+
+<p>Next week is: {{moment-from-now nextWeek}}</p>
+
+{{#if features.showTravis}}
+  <p>Travis is up: {{moment-from-now travis interval=200}}</p>
+{{/if}}

@@ -1,0 +1,15 @@
+@import 'bar-chart-stuff';
+
+body {
+  padding: 1em;
+}
+
+p {
+  background: blue;
+  color: #fff;
+
+  &:nth-child(odd) {
+    background: red;
+    transform: scaleY(-1);
+  }
+}
